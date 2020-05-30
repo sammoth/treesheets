@@ -631,21 +631,7 @@ struct MyFrame : wxFrame {
                 }
             };
 
-            AddTBIcon(_(L"New (CTRL+n)"), A_NEW, iconpath + L"filenew.png");
-            AddTBIcon(_(L"Open (CTRL+o)"), A_OPEN, iconpath + L"fileopen.png");
-            AddTBIcon(_(L"Save (CTRL+s)"), A_SAVE, iconpath + L"filesave.png");
-            AddTBIcon(_(L"Save As"), A_SAVEAS, iconpath + L"filesaveas.png");
-            SEPARATOR;
-            AddTBIcon(_(L"Undo (CTRL+z)"), A_UNDO, iconpath + L"undo.png");
-            AddTBIcon(_(L"Copy (CTRL+c)"), A_COPY, iconpath + L"editcopy.png");
-            AddTBIcon(_(L"Paste (CTRL+v)"), A_PASTE, iconpath + L"editpaste.png");
-            SEPARATOR;
-            AddTBIcon(_(L"Zoom In (CTRL+mousewheel)"), A_ZOOMIN, iconpath + L"zoomin.png");
-            AddTBIcon(_(L"Zoom Out (CTRL+mousewheel)"), A_ZOOMOUT, iconpath + L"zoomout.png");
-            SEPARATOR;
-            AddTBIcon(_(L"New Grid (INS)"), A_NEWGRID, iconpath + L"newgrid.png");
             AddTBIcon(_(L"Add Image"), A_IMAGE, iconpath + L"image.png");
-            SEPARATOR;
             AddTBIcon(_(L"Run"), A_RUN, iconpath + L"run.png");
             tb->AddSeparator();
             tb->AddControl(new wxStaticText(tb, wxID_ANY, _(L"Search ")));
